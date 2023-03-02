@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>wakuwaku</title>
+    </head>
+
+
+    <body>
+         <h1>BMI計算器 </h1>
+
+         <table border="2">
+         	<tr>
+         		<th>身高</th>
+         		<th>體重</th>
+         	</tr>
+         	<tr>
+         		<td><input type="number" id="height" name="height" placeholder="公尺"></td>
+         		<td><input type="number" id="weight" name="weight" placeholder="公斤"></td>
+         	</tr>
+         	<tr>
+         		<td></td>
+         		<td>
+         			<button id="calcustor"onclick="calculate()">計算</button>
+         		</td>
+         	</tr>
+         </table>
+
+         <script type="text/javascript">
+         	function calculate() {
+                 let height =document.querySelector("#height").value;
+                 let weight =document.querySelector("#weight").value;
+                 alert("身高"+height);	 
+                 alert("體重"+weight);
+                 let bmi = weight / (height * height); // 計算BMI
+                 alert("bmi"+bmi);
+                 if (bmi<18.5) {
+                 	alert("體重過輕");
+                 } else if (bmi>=18.5 && bmi<24) {
+                 	alert("健康體位");
+                 } else {
+                 	alert("體位異常")
+                 }
+         	}
+         </script>
+
+         <h1>JJ Project</h1>
+
+         <table border="4">
+         	<tr>
+         		<th>成員</th>
+         		<th>成員</th>         	
+         	</tr>
+         	<tr>
+         		<td>JayB</td>
+         		<td>Jinyoung</td>
+         	</tr>
+         	<tr>
+         		<th>生日</th>
+         		<th>生日</th>        		
+         	</tr>
+         	<tr>
+         		<td>1994.01.06</td>
+         		<td>1994.09.22</td>
+         	</tr>
+         </table>
+         <h3>History</h3>
+         <h4>nice to meet you!</h4>
+         <h5>Love you all</h5>
+         <h6>bye</h6>
+
+        這是嘎七介紹網站
+    </body>
+</html>
