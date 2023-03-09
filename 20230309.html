@@ -1,6 +1,6 @@
 <style>
 	 #result1 {
- 	background-color: red;
+ 	background-color: purple;
  	width: 100px;
  	height: 100px;
  	color: white;
@@ -16,6 +16,17 @@
  	font-weight: bold;
  	font-size: 20px;
  }
+  button {
+ 	width: 300px;
+ 	height: 300px;
+ 	font-size: 30px;
+ }
+
+  #cancel {
+ 	background-color: rgba(255, 0, 0, 0.5);
+ 	color: white;
+ }
+
 </style>
 <div id = 'result1'>
 </div>
@@ -24,22 +35,33 @@
 </div>
 
 <div>
-	<label for = "x">新垣結衣</label>
+	<label for="x">新垣結衣</label>
 	<input type="number" name="x" id="x">
 	<br>
-		<label for = "y">小松菜奈</label>
+	<label for="y">小松菜奈</label>
 	<input type="number" name="y" id="y">
 	<br>
-	<button id="btn">顯示投票結果</button>
+	<button id="btn" onclick="show()">顯示最後投票結果</button>
+	<button id="cancel" onclick="cancel()">回復原始狀態</button>
 </div>
 
 <script>
 let message = "Hello";
 
-let x ="新垣結衣";
-let y ="小松菜奈";
+let x ="新垣結衣<img src ='https://images-tw.girlstyle.com/wp-content/uploads/2022/05/60d8a045.jpg?auto=format&w=1053' width='50' height='50'>";
+let y ="小松菜奈<img src ='https://popbee.com/image/2019/06/komatsu-nana-bella-magazine-cover-story-a00.jpg' width='50' height='50'>";
 
-document.querySelector("#result1").innerText = x;
-document.querySelector("#result2").innerText = y;
+document.querySelector("#result1").innerHTML = x;
+document.querySelector("#result2").innerHTML = y;
 
+function show() {
+	let result_x = document.querySelector("#x").value;
+	let result_y = document.querySelector("#y").value;
+	document.querySelector("#result1").style.width = result_x + "px";
+	document.querySelector("#result2").style.width = result_y + "px";
+}
+function cancel() {
+	document.querySelector("#result1").style.width = "100px";
+	document.querySelector("#result2").style.width = "100px";
+}
 </script>
