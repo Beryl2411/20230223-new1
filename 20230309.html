@@ -1,20 +1,18 @@
 <style>
-	 #result1 {
- 	background-color: purple;
+	.result{
+	background-color: blue;
  	width: 100px;
  	height: 100px;
  	color: white;
  	font-weight: bold;
  	font-size: 20px;
  }
-
+	
+	 #result1 {
+ 	background-color: purple ;
+}
 	 #result2 {
  	background-color: blue;
- 	width: 100px;
- 	height: 100px;
- 	color: white;
- 	font-weight: bold;
- 	font-size: 20px;
  }
   button {
  	width: 300px;
@@ -22,16 +20,16 @@
  	font-size: 30px;
  }
 
-  #cancel {
+      #cancel {
  	background-color: rgba(255, 0, 0, 0.5);
  	color: white;
  }
 
 </style>
-<div id = 'result1'>
+<div id = 'result1' class="result">
 </div>
 
-<div id = 'result2'>
+<div id = 'result2' class="result">
 </div>
 
 <div>
@@ -48,8 +46,8 @@
 <script>
 let message = "Hello";
 
-let x ="新垣結衣<img src ='https://images-tw.girlstyle.com/wp-content/uploads/2022/05/60d8a045.jpg?auto=format&w=1053' width='50' height='50'>";
-let y ="小松菜奈<img src ='https://popbee.com/image/2019/06/komatsu-nana-bella-magazine-cover-story-a00.jpg' width='50' height='50'>";
+let x ="新垣結衣<img src ='https://images-tw.girlstyle.com/wp-content/uploads/2022/05/60d8a045.jpg?auto=format&w=1053' width='60' height='70'>";
+let y ="小松菜奈<img src ='https://popbee.com/image/2019/06/komatsu-nana-bella-magazine-cover-story-a00.jpg' width='70' height='70'>";
 
 document.querySelector("#result1").innerHTML = x;
 document.querySelector("#result2").innerHTML = y;
