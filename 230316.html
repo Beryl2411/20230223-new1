@@ -63,12 +63,16 @@ Stray Kids
 
 <img src="https://a.ksd-i.com/a/2023-02-01/145727-964326.jpg" width="120" height="100">
 <iframe width="280" height="158" src="https://www.youtube.com/embed/-6aVQrzja9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
+<div>
+  NMIXX
 <audio controls>
   <source src="NMIXX.m4a" type="audio/mpeg">
 Your browser does not support the audio element.
-</audio>
+</audio> 
 
+GOT7 
 <video width="200" controls>
   <source src="GOT7_NANANA.mp4" type="video/mp4">
   Your browser does not support HTML video.
@@ -76,6 +80,20 @@ Your browser does not support the audio element.
 
 <h1>My First CSS Example</h1>
 <p>This is JYP ent.</p>
+
+<script>
+  let jins = ['https://s.yimg.com/os/creatr-uploaded-images/2022-12/bf7aade0-7ab9-11ed-9d7c-2ac7b914d858', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZNiFJKOSmS-JG-Lt9p_8L3C7NCdY9cX0LnX5f5LGC0yDz3wwIcNUgHfB0qt5t2E0XjU&usqp=CAU'];
+
+  let count = 0;
+
+  setInterval(
+    function(){
+      document.querySelector("#jin_image").src=jins[count%2];
+      count = count + 1;
+    },
+    3000
+    );
+</script>
 
 </body>
 </html>
