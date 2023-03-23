@@ -25,6 +25,9 @@
 <div class="husky">
 	<img src="https://images.chinatimes.com/newsphoto/2021-03-23/656/20210323005201.jpg" width="200" height="200">
 </div>
+<button class="Samoyed">
+	<img src="https://img.alicdn.com/i1/339661530022/O1CN01GLc7yw1C27WAdGyRC_!!339661530022.jpg_q50s50.jpg" width="100" height="100">
+</button>
 
 <script type="text/javascript">
 	function hide() {
@@ -34,10 +37,14 @@
 		document.querySelector(".news_title").style.display="block";
 	}
 	function hideSamoyed() {
-		document.querySelector(".Samoyed").style.display="none";
+		let elements = document.querySelectorAll(".Samoyed");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";}
 	}
 	function showSamoyed(){
-		document.querySelector(".Samoyed").style.display="block";
+		let elements = document.querySelectorAll(".Samoyed");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";}
 	}
 	function hidehusky() {
 		document.querySelector(".husky").style.display="none";
