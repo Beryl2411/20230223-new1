@@ -4,12 +4,12 @@
 </head>
 
 <body>
-<button onclick="hide();">隱藏文字</button>
-<button onclick="show();">顯示文字</button>
-<button onclick="hideSamoyed();">隱藏薩摩耶</button>
-<button onclick="showSamoyed();">顯示薩摩耶</button>
-<button onclick="hidehusky();">隱藏哈士奇</button>
-<button onclick="showhusky();">顯示哈士奇</button>
+ <button onclick="hide();">隱藏文字</button>
+ <button onclick="show();">顯示文字</button>
+ <button onclick="hideSamoyed();">隱藏薩摩耶</button>
+ <button onclick="showSamoyed();">顯示薩摩耶</button>
+ <button onclick="hidehusky();">隱藏哈士奇</button>
+ <button onclick="showhusky();">顯示哈士奇</button>
 
 <div class="news_title"> 
 	第六周上課
@@ -27,6 +27,10 @@
 </div>
 <button class="Samoyed">
 	<img src="https://www.10wallpaper.com/wallpaper/1366x768/1409/Samoyed_Dog-Animal_photo_wallpapers_1366x768.jpg" width="150" height="150">
+</button>
+
+<button class="husky">
+	<img src="https://img-qn.51miz.com/preview/photo/00/01/55/94/P-1559415-81C725F5O.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fw/300" width="150" height="150">
 </button>
 
 <script type="text/javascript">
@@ -47,10 +51,14 @@
 				elements[i].style.display = "block";}
 	}
 	function hidehusky() {
-		document.querySelector(".husky").style.display="none";
+		let elements = document.querySelectorAll(".husky");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";}
 	}
 	function showhusky(){
-		document.querySelector(".husky").style.display="block";
+		let elements = document.querySelectorAll(".husky");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";}
 	}
 </script>
 </body>
