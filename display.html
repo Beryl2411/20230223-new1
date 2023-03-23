@@ -6,11 +6,18 @@
 <body>
 <button onclick="hide();">隱藏文字</button>
 <button onclick="show();">顯示文字</button>
+<button onclick="hideSamoyed();">隱藏薩摩耶</button>
+<button onclick="showSamoyed();">顯示薩摩耶</button>
 
 <div class="news_title"> 
 	第六周上課
 	<br />
 	要準備期中報告了
+</div>
+
+<div class="Samoyed">
+	<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg03.sogoucdn.com%2Fv2%2Fthumb%2Fretype_exclude_gif%2Fext%2Fauto%2Fcrop%2Fxy%2Fai%2Fw%2F600%2Fh%2F400%3Fappid%3D200698%26url%3Dhttps%3A%2F%2Fpic.baike.soso.com%2Fugc%2Fbaikepic2%2F10827%2Fori-20200716092015-1854835828_jpg_1920_1200_296650.jpg%2F0&tbnid=XG6KvBBYWZWeHM&vet=12ahUKEwiMnYm5rvH9AhXGf94KHZEnAeUQMygDegUIARC0AQ..i&imgrefurl=https%3A%2F%2Fbaike.sogou.com%2Fv8641.htm&docid=JeSfAsFK_VSH-M&w=600&h=400&q=%E8%96%A9%E6%91%A9%E8%80%B6%20%E8%8B%B1%E6%96%87&ved=2ahUKEwiMnYm5rvH9AhXGf94KHZEnAeUQMygDegUIARC0AQ"width="200" height="200">
+	
 </div>
 
 <script type="text/javascript">
@@ -19,6 +26,12 @@
 	}
 	function show(){
 		document.querySelector(".news_title").style.display="block";
+	}
+	function hideSamoyed() {
+		document.querySelector(".Samoyed").style.display="none";
+	}
+	function showSamoyed(){
+		document.querySelector(".Samoyed").style.display="block";
 	}
 </script>
 </body>
