@@ -8,6 +8,8 @@
 <button onclick="show();">顯示文字</button>
 <button onclick="hideSamoyed();">隱藏薩摩耶</button>
 <button onclick="showSamoyed();">顯示薩摩耶</button>
+<button onclick="hidehusky();">隱藏哈士奇</button>
+<button onclick="showhusky();">顯示哈士奇</button>
 
 <div class="news_title"> 
 	第六周上課
@@ -18,6 +20,10 @@
 <div class="Samoyed">
 	<img src="https://img03.sogoucdn.com/v2/thumb/retype_exclude_gif/ext/auto/crop/xy/ai/w/600/h/400?appid=200698&url=https://pic.baike.soso.com/ugc/baikepic2/10827/ori-20200716092015-1854835828_jpg_1920_1200_296650.jpg/0"width="200" height="200">
 	
+</div>
+
+<div class="husky">
+	<img src="https://images.chinatimes.com/newsphoto/2021-03-23/656/20210323005201.jpg" width="200" height="200">
 </div>
 
 <script type="text/javascript">
@@ -32,6 +38,12 @@
 	}
 	function showSamoyed(){
 		document.querySelector(".Samoyed").style.display="block";
+	}
+	function hidehusky() {
+		document.querySelector(".husky").style.display="none";
+	}
+	function showhusky(){
+		document.querySelector(".husky").style.display="block";
 	}
 </script>
 </body>
