@@ -47,10 +47,10 @@
 			z-index:-1;
 		}
 		.backgroundimage video{
-			width: 100vw;
-			height: 100vh;
-			position: absolute;
-			left:-1px;
+			width: 140vw;
+			height: 150vh;
+			position: fixed;
+			left:-200px;
 		}
 
 		body{
@@ -60,7 +60,8 @@
 
     .news_title{
     	background-color: rgba(0, 0, 0, 0.5);
-    }
+		}
+
 	 </style>
 </head>
 
@@ -85,15 +86,16 @@
 	毛絨絨的超可愛
 </div>
 
-<div class="dogs">
+<div class="news_title dogs">
 
 <div class="Samoyed dog">
 	<img src="https://img03.sogoucdn.com/v2/thumb/retype_exclude_gif/ext/auto/crop/xy/ai/w/600/h/400?appid=200698&url=https://pic.baike.soso.com/ugc/baikepic2/10827/ori-20200716092015-1854835828_jpg_1920_1200_296650.jpg/0"width="200" height="200">
 	
-</div>
 
+</div>
 <div class="husky dog">
 	<img src="https://images.chinatimes.com/newsphoto/2021-03-23/656/20210323005201.jpg" width="200" height="200">
+
 </div>
 <button class="Samoyed dog">
 	<img src="https://www.10wallpaper.com/wallpaper/1366x768/1409/Samoyed_Dog-Animal_photo_wallpapers_1366x768.jpg" width="150" height="150">
@@ -102,7 +104,8 @@
 <button class="husky dog">
 	<img src="https://img-qn.51miz.com/preview/photo/00/01/55/94/P-1559415-81C725F5O.jpg!/quality/90/unsharp/true/compress/true/format/jpg/fw/300" width="150" height="150">
 </button>
-  </div>
+
+</div>
 
 <div class="cats">
 	
@@ -155,9 +158,15 @@
 			for(let i = 0; i < elements.length; i=i+1) {
 				elements[i].style.display = "block";}
 	}
-	window.addEventListener("click",function(){
-		 document.querySelector("#backgroundVideo").play();
-		});
+	
+	window.addEventListener("click", function(){
+		let video = document.querySelector("#backgroundVideo");
+		if (video.paused) {
+			  video.play();
+		} else {
+			  video.pause();
+		}
+	});
 </script>
 </body>
 
